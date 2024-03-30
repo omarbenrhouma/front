@@ -1,0 +1,200 @@
+Omar Berhouma
+/* Chat box container */
+.chat-container {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Chat circle */
+  #chat-circle {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    z-index: 999;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-image: url(../cytekia.jpg);
+    background-size: 60px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  #chat-circle:hover {
+    width: 70px;
+    height: 70px;
+    background-size: 70px;
+
+  }
+  
+  #chat-circle.scale {
+    transform: scale(0);
+  }
+  
+  #chat-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    background-image: url(../background.jpg);
+    border-radius: 50%;
+  }
+  
+  #chat-circle i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 28px;
+  }
+
+
+  .chat-box::-webkit-scrollbar {
+    width: 10px;
+    border-top-right-radius: 20px;
+  }
+  
+  .chat-box::-webkit-scrollbar-thumb {
+    background-color: #00EBB5;
+    border-top-right-radius: 20px;
+
+  }
+  
+  .chat-box::-webkit-scrollbar-track {
+    background-color: #ffffff;
+    border-top-right-radius: 20px;
+
+
+  }  /* Chat box */
+  .chat-box {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    width: 350px;
+    height: 400px;
+    background-image: url(../background.jpg);
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease-in-out;
+overflow-y: auto; 
+scroll-behavior: smooth; }
+  
+  .chat-box.scale {
+    transform: scale(0);
+  }
+  
+  .chat-box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #00EBB5;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .chat-box-header .chat-box-toggle {
+    cursor: pointer;
+    font-size: 22px;
+  }
+  
+  .chat-box-body {
+    flex-grow: 1;
+    position: relative;
+  }
+  
+  .chat-box-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 10;
+    background-color: rgba(221, 86, 86, 0.5);
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Chat messages */
+  .chat-msg {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+  }
+  
+  .chat-msg.self {
+    justify-content: flex-end;
+  }
+  
+  .msg-avatar {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .msg-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .cm-msg-text {
+    margin: 7px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    max-width: 70%;
+    word-wrap: break-word;
+  }  
+
+.btnn-primary {
+  background-image: url(../background.jpg);
+   color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  
+  .btnn-primary:hover {
+    opacity: 0.8;
+  }
+  
+  .chat-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f0f0;
+    position: relative;
+    top: 157px;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+
+  }
+  .chat-input input {
+    color: black;
+    width: 258px;
+    margin-right: 10px;
+    border-top-color:transparent ;
+    border-right-color:transparent ;
+    border-left-color:transparent ;
+    border-bottom-color: #00EBB5;
+    background-color:#f1f0f0;
+    
+  }
+  .chat-input input::placeholder {
+    color: black;
+  }
+  .img{
+    transform:rotate(45deg)
+  }

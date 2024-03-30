@@ -1,65 +1,61 @@
-import { FETCH_DATA_START, FETCH_DATA_SUCCESS, DATA_ERROR,UPDATE_DATA_SUCCESS,DELETE_DATA_SUCCESS,CREATE_SUCCESS,DATA_SUCCESS,DELETTA_SUCCES} from '../Types/types';
+import * as service from '../Types/types';
 
 const initialState = {
-  data: [],
-  loading: false,
+  user: null,
+  token: null,
+  newmission: null,
+  newproject: null,
+  mission: null,
+  project: null,
+  isLoading: false,
   error: null,
-};
-
-const reducer = (state = initialState, action) => {
+  data: null
+}
+const authReducer = (state = initialState, action) => {
   switch (action.type) {
-    case FETCH_DATA_START:
+    case service.REQUEST:
+      return { ...state, isLoading: true, error: null };
+    case service.REGISTER_SUCCESS:
+      return { ...state, isLoading: false, user: action.payload };
+    case service.FAILURE:
+      return { ...state, isLoading: false, error: action.payload };
+    case service.LOGIN_SUCCESS:
+      return { ...state, isLoading: false, user: action.payload, token: action.payload.token };
+    case service.EDIT_SUCCESS:
+      return { ...state, isLoading: false, user: action.payload };
+    case service.MISSION_SUCCESS:
+      return { ...state, isLoading: false, newmission: action.payload };
+    case service.PROJECT_SUCCESS:
+      return { ...state, isLoading: false, newproject: action.payload };
+    case service.GET_MISSION_SUCCESS:
+      return { ...state, isLoading: false, mission: action.payload, newmission: null, newproject: null };
+    case service.DELETE_MISSION_SUCCESS:
+      return { ...state, isLoading: false, mission: action.payload };
+    case service.UPDATE_SUCCESS:
+      return { ...state, isLoading: false, mission: action.payload };
+    case service.GET_PROJECT_SUCCESS:
+      return { ...state, isLoading: false, project: action.payload };
+    case service.UPDATE_PROJECT_SUCCESS:
+      return { ...state, isLoading: false, project: action.payload };
+    case service.GET_DATA_SUCCESS:
+      return { ...state, isLoading: false, data: action.payload };
+    case service.LOGOUT:
       return {
-        ...state,
-        loading: true,
+        ...state, user: null,
+        token: null,
+        newmission: null,
+        newproject: null,
+        mission: null,
+        project: null,
+        isLoading: false,
         error: null,
+        data: null
       };
-    case FETCH_DATA_SUCCESS:
-      return {
-        ...state,
-        data: action.payload,
-        loading: false,
-        error: null,
-      };
-    case DATA_ERROR:
-      return {
-        ...state,
-        loading: false,
-        error: action.payload,
-      };
-      case UPDATE_DATA_SUCCESS:
-        return {
-          ...state,
-          loading: false,
-          data: action.payload,
-        };
-        case DELETE_DATA_SUCCESS:
-          return {
-            ...state,
-            loading: false,
-            data: action.payload,
-          };
-          case CREATE_SUCCESS:
-            return {
-              ...state,
-              loading: false,
-              data: action.payload,
-            };
-            case DELETTA_SUCCES:
-              return {
-                ...state,
-                loading: false,
-                data: action.payload,
-              };
-              case DATA_SUCCESS:
-                return {
-                  ...state,
-                  loading: false,
-                  data: action.payload,
-                };
+
     default:
       return state;
   }
 };
 
-export default reducer;
+export default authReducer;
+

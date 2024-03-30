@@ -1,0 +1,179 @@
+.listbody{
+  background-image:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../background.jpg);
+}
+:where(.css-dev-only-do-not-override-yp8pcc).ant-upload-wrapper .ant-upload-list .ant-upload-list-item .ant-upload-list-item-name {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 0 8px;
+  line-height: 1.5714285714285714;
+  flex: auto;
+  transition: all 0.3s;
+  color: #fff;
+}
+
+:where(.css-dev-only-do-not-override-yp8pcc).ant-upload-wrapper .ant-upload-list .ant-upload-list-item .ant-upload-icon .anticon {
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 14px;
+}
+:where(.css-dev-only-do-not-override-yp8pcc).ant-upload-wrapper .ant-upload-list .ant-upload-list-item .ant-upload-list-item-actions .ant-upload-list-item-action.ant-btn-sm >span {
+  transform: scale(1);
+  color: white;
+}
+.btn{
+  display: block;
+  padding: 15px 20px;
+  text-align: center;
+  border: none;
+  background: #ffffff;
+  outline: none;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  color: #000000;
+  cursor: pointer;
+  transition: .3s;
+}
+.btn:hover{
+  transform: translateY(-5px);
+  background: #00EBB5;
+  color:black
+}
+.buttone{
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -30px;
+ }
+ h1{
+  color: #f8f4f4;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
+  text-transform: capitalize;
+}
+:where(.css-dev-only-do-not-override-yp8pcc).ant-btn-primary {
+  color: #fff;
+  background-color: #00EBB5;
+  box-shadow: 0 2px 0 rgb(5 145 255 / 10%);
+}
+
+.tsst{        color: #f8f4f4;
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-bottom: 24px;
+  margin-left: 15px;
+  text-align: left;
+  display: block;
+  text-transform: capitalize;}
+.login-text{
+  color: #f8f4f4;
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-bottom: 7px;
+  margin-left: 15px;
+  text-align: left;
+  display: block;
+  text-transform: capitalize;
+}
+.nodata{
+  background-image:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../background.jpg);
+
+}
+.data{
+  margin-top: 15%;
+  text-align: center;
+}
+.data
+:where(.css-dev-only-do-not-override-yp8pcc).ant-empty-normal .ant-empty-description {
+  color: aqua;
+  margin-top: 50px;
+}
+.data
+:where(.css-dev-only-do-not-override-yp8pcc).ant-empty .ant-empty-image svg {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 50px;
+  }
+  .des{display: flex;
+  color: aliceblue;
+gap: 5px;}
+
+:where(.css-dev-only-do-not-override-yp8pcc).ant-card-bordered .ant-card-cover {
+  margin-top: 5px;
+  margin-inline-start: 90px;
+  margin-inline-end: -1px;
+  align-items: center;
+}
+
+
+:where(.css-dev-only-do-not-override-yp8pcc).ant-card .ant-card-cover >* {
+  display: block;
+  width: 50px;
+  align-items: center;
+  text-align: center;
+}
+  .card {
+    background: rgba(0, 235, 181, 0.1);
+    width: 250px;
+    border: 1px solid;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .card img {
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .card h3 {
+    margin: 10px;
+    font-size: 1.5rem;
+  }
+  
+  .card p {
+    margin: 10px;
+    font-size: 1rem;
+  }
+  
+  .card button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card button:hover {
+    background-color: #0070ff;
+  }
+  
+  
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #00EBB5;
+    border-radius: 20px;
+
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-image:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../background.jpg);
+
+
+  } 

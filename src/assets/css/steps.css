@@ -1,0 +1,49 @@
+.ant-steps{
+    position: fixed;
+    max-width: 250px;
+    left: 0 ;
+}
+:where(.css-dev-only-do-not-override-yp8pcc).ant-steps .ant-steps-item-finish>.ant-steps-item-container>.ant-steps-item-content>.ant-steps-item-title {
+    color: rgba(250, 250, 250, 0.88);
+}
+:where(.css-dev-only-do-not-override-yp8pcc).ant-steps .ant-steps-item-finish>.ant-steps-item-container>.ant-steps-item-content>.ant-steps-item-description {
+    color: rgba(255, 255, 255, 0.45);
+}
+
+:where(.css-dev-only-do-not-override-yp8pcc).ant-steps .ant-steps-item-wait .ant-steps-item-icon >.ant-steps-icon {
+    color: rgba(253, 253, 253, 0.65);
+}
+:where(.css-dev-only-do-not-override-yp8pcc).ant-steps .ant-steps-item-finish .ant-steps-item-icon {
+    background: rgba(0, 235, 181, 0.1);
+    border-color: #0a7dd4;
+}
+:where(.css-dev-only-do-not-override-yp8pcc).ant-steps .ant-steps-item-process .ant-steps-item-icon {
+    background: rgba(0, 235, 181, 0.1);
+    border-color: #ffffff;
+}
+:where(.css-dev-only-do-not-override-yp8pcc).ant-steps .ant-steps-item-wait .ant-steps-item-icon {
+    background-color: rgba(0, 0, 0, 0.06);
+    border-color: #ffffff;
+
+}
+:where(.css-dev-only-do-not-override-yp8pcc).ant-steps .ant-steps-item-process>.ant-steps-item-container>.ant-steps-item-tail::after {
+    background-color: aqua;
+}
+:where(.css-dev-only-do-not-override-yp8pcc).ant-steps .ant-steps-item-process>.ant-steps-item-container>.ant-steps-item-tail::after {
+    background-color: aqua;
+}
+:where(.css-dev-only-do-not-override-yp8pcc).ant-steps .ant-steps-item-wait>.ant-steps-item-container>.ant-steps-item-tail::after {
+    background-color: aqua;
+}
+:where(.css-dev-only-do-not-override-yp8pcc).ant-steps .ant-steps-item-process>.ant-steps-item-container>.ant-steps-item-content>.ant-steps-item-title {
+    color: aqua;
+}
+:where(.css-dev-only-do-not-override-yp8pcc).ant-steps .ant-steps-item-process>.ant-steps-item-container>.ant-steps-item-content>.ant-steps-item-description {
+    color: rgba(255, 255, 255, 0.88);
+}
+:where(.css-dev-only-do-not-override-yp8pcc).ant-steps .ant-steps-item-wait>.ant-steps-item-container>.ant-steps-item-content>.ant-steps-item-title {
+    color: #0a7dd4;
+}
+:where(.css-dev-only-do-not-override-yp8pcc).ant-steps .ant-steps-item-wait>.ant-steps-item-container>.ant-steps-item-content>.ant-steps-item-description {
+    color: #0a7dd4;
+}

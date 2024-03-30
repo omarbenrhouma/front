@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #00EBB5;
+}
+
+body {
+
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(./assets/background.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+:where(.css-dev-only-do-not-override-yp8pcc).ant-modal .ant-modal-content {
+    position: relative;
+    background-color: #6f3e3e;
+    background-clip: padding-box;
+    border: 0;
+    border-radius: 8px;
+    background: rgba(10, 12, 12, 0.582);
+    pointer-events: auto;
+    padding: 20px 24px;
+}
+
+:where(.css-dev-only-do-not-override-yp8pcc).ant-modal .ant-modal-title {
+    margin: 0;
+    background: rgba(255, 255, 255, 0);
+    color: rgba(255, 255, 255, 0.932);
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+}
+
+:where(.css-dev-only-do-not-override-yp8pcc).ant-modal .ant-modal-header {
+    color: rgba(0, 0, 0, 0.88);
+    background: none;
+    margin-bottom: 8px;
+}
+
+.Auth {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(./assets/background.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 400px;
+    min-height: 400px;
+    background: rgba(0, 235, 181, 0.1);
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+    padding: 40px 30px;
+    margin-left: 700px;
+}
+
+.container .login-text {
+    color: #111;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+    text-transform: capitalize;
+}
+
+.container .input-group {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 25px;
+}
+
+.container .input-group input {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #000000;
+    padding: 15px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    background: transparent;
+    outline: none;
+    transition: .3s;
+}
+
+.container .login-register-text {
+    color: rgba(208, 208, 208, 0.5);
+}
+
+.container .input-group input {
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.container .input-group input:focus {
+    border-color: #00EBB5;
+}
+
+.container .input-group input:valid {
+    border-color: #ffffff;
+}
+
+.container .input-group .btn {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    text-align: center;
+    border: none;
+    background: #ffffff;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    color: #000000;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.title-with-bg {
+    position: relative;
+    display: inline-block;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.margin-0 {
+    margin: 0 auto;
+}
+
+.block {
+    display: block;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.title-with-bg .small-title {
+    color: #00EBB5;
+    font-size: 20px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-with-bg .big-title {
+    color: rgba(208, 208, 208, 0.1);
+    font-size: 40px;
+
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+.container .input-group .btn:hover {
+    transform: translateY(-5px);
+    background: #00EBB5;
+    color: black
+}
+
+
+@media (max-width: 430px) {
+    .container {
+        width: 300px;
+    }
+
+    .container .login-social {
+        display: block;
+    }
+
+    .container .login-social a {
+        display: block;
+    }
+}
+
+.ant-btn-dang span {
+    color: red;
+}
+
+:where(.css-dev-only-do-not-override-yp8pcc).ant-modal-confirm .ant-modal-confirm-body .ant-modal-confirm-title {
+    color: #ffffff;
+}
+
+:where(.css-dev-only-do-not-override-yp8pcc).ant-btn-default:not(:disabled):hover {
+    color: #00EBB5;
+    border-color: #00EBB5;
+}

@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a{ 
+    text-decoration: none;
+    color: #00EBB5;
+}
+.missionbody {
+    width: 100%;
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../background.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerti {
+    width: 400px;
+    min-height: 400px;
+    background: rgba(0, 235, 181, 0.1);
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    padding: 40px 30px;
+}
+
+.containerti .login-text {
+    color: #f8f4f4;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-bottom: 7px;
+    margin-left: 15px;
+    text-align: left;
+    display: block;
+    text-transform: capitalize;
+}
+
+.containerti  .input-group {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.containerti  .input-group input {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #000000;
+    padding: 15px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    background: transparent;
+    outline: none;
+    transition: .3s;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+.containerti .login-register-text{
+    color: rgba(208, 208, 208,0.5);
+}
+.containerti  input:hover{
+    border-color: #00EBB5;
+}
+
+.input-grou {
+    display: inline-block;
+    margin-right: 20px; 
+    margin-bottom: 10px;
+
+  }
+  
+  .input-grous {
+    display: inline-block;
+  }
+  .ant-input-group{
+    height: 100%;
+    border-color: #ffffff;
+    margin-top: -18PX;
+  }
+.ss{    
+    width: 150px;
+    height: 50px;
+    background: transparent;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+.ant-input::placeholder{color: grey;}
+.ant-input{
+    border: 2px solid #ffffff;
+    height: 100%;
+    padding: 15px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    background: transparent;
+    outline: none;
+    transition: .3s;
+    color: #ffffff;}
+    .containerti .tsst {
+        color: #f8f4f4;
+        font-weight: 500;
+        font-size: 1.1rem;
+        margin-bottom: 24px;
+        margin-left: 15px;
+        text-align: left;
+        display: block;
+        text-transform: capitalize;
+    }
+.ant-input:focus{
+    border-color: #00EBB5;
+}
+.ant-input:hover{    border-color: #00EBB5;
+}
+.ant-input-group .ant-input-group-addon:last-child{color: #ffffff; border-bottom-right-radius: 30px;    border: 2px solid #ffffff;
+}
+ .email {
+    width: 150px;
+    height: 100%;
+    border: 2px solid #000000;
+    padding: 15px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    background: transparent;
+    outline: none;
+    transition: .3s; /* adjust the width as needed */
+    border-color: #ffffff;
+    color: #ffffff;
+  }
+.containerti  .input-group input:focus{
+    border-color: #00EBB5;
+}
+.containerti  .input-group .btn {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    text-align: center;
+    border: none;
+    background: #ffffff;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    color: #000000;
+    cursor: pointer;
+    transition: .3s;
+}
+.title-with-bg {
+    position: relative;
+    display: inline-block;
+}
+.center-text {
+    text-align: center;
+}
+.margin-0 {
+    margin: 0 auto;
+}
+.block {
+    display: block;
+}
+.center-text {
+    text-align: center;
+}
+.date.ant-upload-list-item-name,
+.date.anticon svg {
+    display: inline-block;
+    color: beige;
+}
+.title-with-bg .small-title {
+    color: #00EBB5;
+    font-size: 20px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title-with-bg .big-title {
+    color: rgba(208, 208, 208, 0.1);    
+    font-size: 40px;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+.containerti  .input-group .btn:hover {
+    transform: translateY(-5px);
+    background: #00EBB5;
+    color:black
+}
+
+
+@media (max-width: 430px) {
+    .containerti {
+        width: 300px;
+    }
+    .containerti .login-social {
+        display: block;
+    }
+    .containerti .login-social a {
+        display: block;
+    }
+}

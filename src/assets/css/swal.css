@@ -1,0 +1,24 @@
+
+.swal-modal{
+    background-color: transparent;
+}
+.swal-icon--success:after, .swal-icon--success:before,.swal-icon--success__hide-corners {
+    background-color: transparent;
+
+}
+
+
+.swal-title,.swal-text{
+    color: #ffffff;
+}
+.swal-button {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 30px;
+
+}
+
+.swal-button :hover {
+    transform: translateY(-5px);
+    color:rgb(250, 250, 250)
+}
